@@ -11,7 +11,7 @@ echo "AscendingSort Test";
 $AscSort = new \Mybeard\StrategySorter\Context(new \Mybeard\StrategySorter\AscendingSort());
 $AscArray = $AscSort->executeStrategy($test_array);
 $DescSort = new \Mybeard\StrategySorter\Context(new \Mybeard\StrategySorter\DescendingSort());
-$DescArray = $AscSort->executeStrategy($test_array);
+$DescArray = $DescSort->executeStrategy($test_array);
 
 
 var_dump($AscArray);
