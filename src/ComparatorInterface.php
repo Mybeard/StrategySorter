@@ -9,7 +9,7 @@
 namespace Mybeard\StrategySorter;
 
 
-interface Sorter
+interface Comparator
 {
     public function sort(array $data): array
 }
