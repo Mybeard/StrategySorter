@@ -1,13 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: boroda
- * Date: 04.12.18
- * Time: 22:12
- */
-
 namespace Mybeard\StrategySorter;
-
 
 class Context
 {
@@ -18,9 +10,9 @@ class Context
         $this->comparator = $comparator;
     }
 
-    public function executeStrategy(array $elements) : array
+    public function executeStrategy(array $elements): array
     {
-        uasort($elements, [$this->comparator, 'compare']);
+        \uasort($elements, [$this->comparator, 'sort']);
 
         return $elements;
     }

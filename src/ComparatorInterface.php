@@ -1,15 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: boroda
- * Date: 04.12.18
- * Time: 21:50
- */
-
 namespace Mybeard\StrategySorter;
 
-
-interface Comparator
+interface ComparatorInterface
 {
-    public function sort(array $data): array
+    public function sort($a, $b): int;
 }
