@@ -1,11 +1,16 @@
 <?php
 namespace Mybeard\StrategySorter;
 
-class Context
+class Sorter
 {
     private $comparator;
 
     public function __construct(ComparatorInterface $comparator)
+    {
+        $this->comparator = $comparator;
+    }
+
+    public function setComparator(ComparatorInterface $comparator)
     {
         $this->comparator = $comparator;
     }
