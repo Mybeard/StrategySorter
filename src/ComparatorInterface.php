@@ -1,4 +1,9 @@
 <?php
+
+/*
+ * Array sorter library
+ */
+
 namespace Mybeard\StrategySorter;
 
 interface ComparatorInterface
